@@ -1,0 +1,332 @@
+:root {
+    --primary-color: #34d399;
+    --background-color: #1a1a1a;
+    --card-color: #2c2c2c;
+    --border-color: #444;
+    --text-color: #f0f2f5;
+    --text-muted-color: #a3a3a3;
+    --yellow-star-color: #facc15;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--card-color);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.admin-header {
+    background: linear-gradient(90deg, #34d399, #2dd4bf);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.admin-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.add-item-form-wrapper {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+}
+
+.add-item-form {
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.add-item-form h2 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-muted-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-submit, .btn-cancel {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: filter 0.2s;
+}
+
+.btn-submit {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-submit:hover {
+    filter: brightness(1.1);
+}
+
+.btn-cancel {
+    background-color: var(--border-color);
+    color: var(--text-color);
+}
+.btn-cancel:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+.product-list-preview h2 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.product-list-container {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.category-section h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.product-grid-admin {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.product-card-admin {
+    background-color: #3a3a3a;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card-admin img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card-admin h3 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    color: var(--text-color);
+    flex-grow: 1;
+}
+
+.product-card-admin p {
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.card-actions {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.btn-icon {
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: background-color 0.2s;
+}
+
+.btn-icon:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.btn-star.featured .fa-star {
+    color: var(--yellow-star-color);
+    font-weight: 900; /* Solid star */
+}
+
+.btn-delete:hover {
+    color: #e53e3e;
+}
+
+/* NEW STYLES */
+.admin-content-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 40px 20px 20px 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.coupon-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.coupon-card-admin {
+    background-color: #3a3a3a;
+    border-radius: 12px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.coupon-details h3 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.coupon-details p {
+    margin: 0;
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+}
+
+.coupon-details p strong {
+    color: var(--text-color);
+}
+
+.coupon-card-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.file-input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.file-input::file-selector-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: filter 0.2s;
+}
+
+.file-input::file-selector-button:hover {
+    filter: brightness(1.1);
+}
+
+.image-preview-container {
+    width: 100%;
+    height: 150px;
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+#image-preview {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#image-preview-text {
+    color: var(--text-muted-color);
+}
+
+.hidden {
+    display: none !important;
+}

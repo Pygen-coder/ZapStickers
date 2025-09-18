@@ -1,0 +1,63 @@
+<div class="modal-container" id="address-modal">
+    <div class="modal-card">
+        <h2 id="address-modal-title">Add New Address</h2>
+        <form id="address-form" novalidate>
+            <input type="hidden" id="address-id">
+            
+            <div class="form-group">
+                <label for="address-title">Address Title</label>
+                <input type="text" id="address-title" placeholder="e.g., Home, Work" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address-line1">Address Line 1</label>
+                <input type="text" id="address-line1" placeholder="House No., Building, Street, Area" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address-line2">Address Line 2 (Optional)</label>
+                <input type="text" id="address-line2" placeholder="Apartment, Suite, Unit, etc.">
+            </div>
+
+            <div class="form-group">
+                <label for="address-landmark">Landmark (Optional)</label>
+                <input type="text" id="address-landmark" placeholder="Near City Hall, etc.">
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="address-pincode">Pincode</label>
+                    <input type="text" id="address-pincode" placeholder="e.g., 751024" required pattern="\d{6}">
+                </div>
+                <div class="form-group">
+                    <label for="address-country">Country 
+                        <span class="tooltip-icon" data-tooltip="We currently only ship within India.">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </span>
+                    </label>
+                    <input type="text" id="address-country" value="India" disabled>
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="address-state">State</label>
+                    <select id="address-state" required>
+                        <option value="" disabled selected>Select State</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address-district">District</label>
+                    <select id="address-district" required disabled>
+                        <option value="" disabled selected>Select District</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button type="button" class="btn-explore ghost" id="modal-cancel-address-btn">Cancel</button>
+                <button type="submit" class="btn-explore">Save Address</button>
+            </div>
+        </form>
+    </div>
+</div>
