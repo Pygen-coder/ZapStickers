@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skins - ZapStickers</title>
+    <link rel="stylesheet" href="./CSS/style_home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="auth-modal-placeholder"></div>
+
+    <main class="container">
+        <section class="product-section">
+            <div class="section-header">
+                <h1 style="text-align: center; font-size: 2.5rem;">Explore Skins</h1>
+
+                <div class="product-category-switcher">
+                    <button class="switcher-btn active" data-category="all">
+                        <i class="fa-solid fa-border-all"></i> All
+                    </button>
+                    <button class="switcher-btn" data-category="mobile">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Mobile
+                    </button>
+                    <button class="switcher-btn" data-category="laptop">
+                        <i class="fa-solid fa-laptop"></i> Laptops
+                    </button>
+                    <button class="switcher-btn" data-category="tablet">
+                        <i class="fa-solid fa-tablet-screen-button"></i> Tablets
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="skins-grid">
+                <!-- Skins will be loaded here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="./JS/main.js" defer></script>
+</body>
+
+</html>

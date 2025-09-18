@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ZapStickers</title>
+    <link rel="stylesheet" href="./CSS/style_home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="auth-modal-placeholder"></div>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Shopping Cart</h1>
+            <a href="Browse_Page.html" class="continue-shopping-link">Continue Shopping <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <div class="cart-layout">
+            <div class="empty-cart-message hidden">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <h2>Your cart is empty</h2>
+                <p>Looks like you haven't added anything to your cart yet.</p>
+                <a href="Browse_Page.html"><button class="btn-explore">Start Shopping</button></a>
+            </div>
+            <div class="cart-items-list">
+                </div>
+
+            <div class="order-summary-card">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span class="summary-value" id="cart-subtotal">₹0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span class="summary-value">Free</span>
+                </div>
+                <div class="summary-row hidden" id="discount-row">
+                    <span>Discount</span>
+                    <span class="summary-value" id="discount-amount">- ₹0.00</span>
+                </div>
+                <hr class="dropdown-divider">
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span class="summary-value total-price">₹0.00</span>
+                </div>
+                <div class="promo-code-section">
+                    <input type="text" class="promo-code-input" placeholder="Enter promo code">
+                    <button class="promo-apply-btn">Apply</button>
+                </div>
+                <div id="promo-message" class="promo-message"></div>
+                <a href="Buy_page.html"><button class="btn-checkout">Proceed to Checkout</button></a>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="./JS/main.js" defer></script>
+</body>
+
+</html>

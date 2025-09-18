@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZapStickers</title>
+    <link rel="stylesheet" href="./CSS/style_home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="auth-modal-placeholder"></div>
+
+    <main class="container">
+        <!-- Main Hero Section -->
+        <section class="hero-section" style="margin-top: 40px;">
+            <div class="hero-content">
+                <h1>Unleash Your Style</h1>
+                <p>Premium vinyl stickers, skins, and decals for all your gear. Express yourself with designs that stick.</p>
+                <div class="hero-buttons">
+                    <a href="skins.html"><button class="btn-explore">Shop Now</button></a>
+                    <a href="Custom.html"><button class="btn-explore ghost">Custom Orders</button></a>
+                </div>
+            </div>
+            <div class="hero-images">
+                <img src="https://images.unsplash.com/photo-1614314220818-1edc59b67e3a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Abstract Sticker Collage" class="hero-img hero-img-1">
+                <img src="https://images.unsplash.com/photo-1583225214464-9296029427aa?q=80&w=625&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Holographic Sticker" class="hero-img hero-img-2">
+                <img src="https://plus.unsplash.com/premium_vector-1752683642344-9a6dbd64cd88?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Geometric Sticker" class="hero-img hero-img-3">
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="product-section">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+            </div>
+            <div class="product-grid" id="featured-products-grid">
+                <!-- Featured products will be loaded here dynamically -->
+            </div>
+        </section>
+
+        <!-- Shop by Category Section -->
+        <section class="product-section">
+            <div class="section-header">
+                <h2>Shop by Category</h2>
+            </div>
+            <div class="browse-grid-section" style="padding: 20px 0;">
+                <div class="grid-item">
+                    <a href="Stickers.html">
+                        <img src="https://images.unsplash.com/photo-1583225214464-9296029427aa?q=80&w=625&auto=format&fit=crop" alt="Stickers Collage">
+                        <div class="grid-item-content">
+                            <h2>Stickers</h2>
+                            <p>High-quality, waterproof, and perfect for personalizing anything.</p>
+                            <button class="btn-explore ghost">Shop Stickers</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="decals.html">
+                        <img src="https://i.pinimg.com/originals/4c/e6/66/4ce66614347f86aef675840604e9d216.jpg" alt="Decals on a car window">
+                        <div class="grid-item-content">
+                            <h2>Decals</h2>
+                            <p>Bold, durable decals for cars, walls, and more. Make a statement.</p>
+                            <button class="btn-explore ghost">Shop Decals</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="Custom.html">
+                        <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800&auto=format&fit=crop" alt="Custom Designs">
+                        <div class="grid-item-content">
+                            <h2>Customs</h2>
+                            <p>Customizable stickers and decals for all your creative DIY projects.</p>
+                            <button class="btn-explore ghost">Shop Customs</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Skins Section -->
+        <a href="skins.html#mobile" class="showcase-link">
+            <section class="minimal-showcase-section" id="mobile-showcase">
+                <div class="minimal-showcase-content">
+                    <h2>Mobile Skins</h2>
+                    <p>Premium, precision-cut skins for a flawless finish.</p>
+                    <button class="btn-explore ghost">View Collection</button>
+                </div>
+            </section>
+        </a>
+
+        <!-- New Arrivals Section -->
+        <section class="product-section">
+            <div class="section-header">
+                <h2>New Arrivals</h2>
+            </div>
+            <div class="product-grid" id="new-arrivals-grid">
+                <!-- Newest products will be loaded here dynamically -->
+            </div>
+        </section>
+
+        <!-- Laptop Skins Section -->
+        <a href="skins.html#laptop" class="showcase-link">
+            <section class="minimal-showcase-section" id="laptop-showcase">
+                 <div class="minimal-showcase-content">
+                    <h2>Laptop Skins</h2>
+                    <p>Durable, easy to apply, and residue-free protection.</p>
+                    <button class="btn-explore ghost">View Collection</button>
+                </div>
+            </section>
+        </a>
+
+        
+
+        <!-- Why Choose Us Section -->
+        <section class="product-section">
+             <div class="section-header">
+                <h2>Why Choose ZapStickers?</h2>
+            </div>
+            <div class="help-category-grid">
+                <div class="help-category-card" style="cursor: default; border-color: transparent;">
+                    <i class="fa-solid fa-gem"></i>
+                    <h3>Premium Quality</h3>
+                    <p>We use high-quality, durable vinyl for all our products to ensure a great look and long-lasting protection.</p>
+                </div>
+                <div class="help-category-card" style="cursor: default; border-color: transparent;">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Fast Shipping</h3>
+                    <p>Orders are dispatched within 2-3 business days. We ship all over India!</p>
+                </div>
+                <div class="help-category-card" style="cursor: default; border-color: transparent;">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>Custom Designs</h3>
+                    <p>Have a unique idea? We'll turn your digital art into a high-quality sticker, skin, or decal.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer-container">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo-section">
+                        <img class="theme-logo footer-logo" src='/Images/ZapLogo-removebg-preview.png' data-dark-src="/Images/ZapLogo-removebg-preview.png" data-light-src="/Images/ZapLogo2-removebg-preview.png" alt="ZapStickers Logo">
+                        <p>Designs that stick. Premium quality stickers, skins, and decals to express your style.</p>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="skins.html">Skins</a></li>
+                        <li><a href="Stickers.html">Stickers</a></li>
+                        <li><a href="decals.html">Decals</a></li>
+                        <li><a href="Custom.html">Custom Orders</a></li>
+                        <li><a href="Browse_Page.html">Browse All</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="help.html">FAQ</a></li>
+                        <li><a href="profile.html#orders">Track Order</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Join Our Newsletter</h3>
+                    <p>Get exclusive deals, new product announcements, and more.</p>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2025 ZapStickers. All Rights Reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="./JS/main.js" defer></script>
+</body>
+
+</html>

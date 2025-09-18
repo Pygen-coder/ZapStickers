@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details - ZapStickers</title>
+    <link rel="stylesheet" href="./CSS/style_home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="auth-modal-placeholder"></div>
+
+    <main class="container">
+        <div class="item-page-layout">
+            
+            <div class="item-main-content">
+                <div class="item-image-container-refined">
+                    <img src="https://images.unsplash.com/photo-1614741118884-857417151158?w=800&auto=format&fit=crop" alt="Product Image" class="product-image" id="item-image">
+                </div>
+
+                <section class="details-section" id="reviews-section">
+                    <h2 class="section-title">Ratings & Reviews</h2>
+                    <div class="reviews-layout">
+                        <div class="reviews-summary">
+                            <div class="overall-rating">
+                                <div class="rating-value">4.5</div>
+                                <div class="star-rating-display">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                </div>
+                                <div class="total-reviews">Based on 12 reviews</div>
+                            </div>
+                            <div class="rating-distribution">
+                                <div class="dist-row"><span>5 Star</span><div class="bar-container"><div class="bar" style="width: 70%;"></div></div><span>7</span></div>
+                                <div class="dist-row"><span>4 Star</span><div class="bar-container"><div class="bar" style="width: 20%;"></div></div><span>2</span></div>
+                                <div class="dist-row"><span>3 Star</span><div class="bar-container"><div class="bar" style="width: 10%;"></div></div><span>1</span></div>
+                                <div class="dist-row"><span>2 Star</span><div class="bar-container"><div class="bar" style="width: 10%;"></div></div><span>1</span></div>
+                                <div class="dist-row"><span>1 Star</span><div class="bar-container"><div class="bar" style="width: 0%;"></div></div><span>0</span></div>
+                            </div>
+                            <button class="btn-explore ghost write-review-btn">Write a Review</button>
+                        </div>
+                        <div class="reviews-list">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">R</div>
+                                        <div>
+                                            <span class="reviewer-name">Rohan Patel</span>
+                                            <span class="review-date">July 20, 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="review-body">Absolutely fantastic quality! The print is sharp and the vinyl feels really durable. It was super easy to apply to my laptop. Highly recommend!</p>
+                            </div>
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">P</div>
+                                        <div>
+                                            <span class="reviewer-name">Priya Singh</span>
+                                            <span class="review-date">July 15, 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="review-body">Looks great, but the color was slightly different than what I saw on screen. Still, good quality for the price.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="product-section">
+                    <div class="section-header">
+                        <h2>You Might Also Like</h2>
+                    </div>
+                    <div class="product-grid" id="similar-products-grid">
+                    </div>
+                </section>
+            </div>
+
+            <div class="item-sidebar">
+                <div class="item-details-sticky">
+                    <h1 id="item-name">Product Name</h1>
+                    
+                    <div class="star-rating-display">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#reviews-section" class="reviews-link">12 Reviews</a>
+                    </div>
+
+                    <p class="item-price" id="item-price">₹0.00</p>
+                    
+                    <div class="item-actions-vertical">
+                        <button class="btn-explore" id="add-to-cart-detail-btn" data-name="" data-image="" data-price="">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <a href="cart.html"><button class="btn-explore ghost">
+                            Go To Cart
+                        </button></a>
+                    </div>
+                     <button class="btn-like-text" id="add-to-wishlist-detail-btn">
+                        <i class="fa-regular fa-heart"></i> Add to Wishlist
+                    </button>
+
+                    <div class="key-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-layer-group"></i> Premium, durable vinyl</li>
+                            <li><i class="fa-solid fa-droplet-slash"></i> Waterproof & Scratch-Resistant</li>
+                            <li><i class="fa-solid fa-sun"></i> UV-Protected & Fade-Proof</li>
+                            <li><i class="fa-solid fa-scissors"></i> Precision-Cut for a Perfect Fit</li>
+                            <li><i class="fa-solid fa-hand-sparkles"></i> Easy to Apply & Residue-Free</li>
+                        </ul>
+                    </div>
+
+                    <details class="item-description-collapsible">
+                        <summary>Product Description</summary>
+                        <p class="item-description">
+                            Loading description...
+                        </p>
+                    </details>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="./JS/main.js" defer></script>
+</body>
+
+</html>

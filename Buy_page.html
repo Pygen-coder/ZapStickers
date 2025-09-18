@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ZapStickers</title>
+    <link rel="stylesheet" href="./CSS/style_home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="auth-modal-placeholder"></div>
+    <div id="address-modal-placeholder"></div>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Checkout</h1>
+            <a href="cart.html" class="continue-shopping-link"><i class="fa-solid fa-arrow-left-long"></i> Back to Cart</a>
+        </div>
+
+        <!-- Checkout Progress Stepper -->
+        <div class="checkout-stepper">
+            <div class="step">
+                <div class="step-circle complete"><i class="fa-solid fa-check"></i></div>
+                <span>Cart</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step active">
+                <div class="step-circle">2</div>
+                <span>Information</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step">
+                <div class="step-circle">3</div>
+                <span>Payment</span>
+            </div>
+        </div>
+
+        <div class="checkout-layout">
+            <div class="checkout-details-card">
+                <h2>Shipping Information</h2>
+                <div class="shipping-info">
+                    <p><strong>Name:</strong> <span id="shipping-name-placeholder">Loading...</span></p>
+                    <p><strong>Phone Number:</strong> <span id="shipping-phone-content"></span></p>
+                </div>
+
+                <!-- Redesigned Address Selection -->
+                <h2 style="margin-top: 20px;">Shipping Address</h2>
+                <div id="checkout-address-list">
+                    <!-- Address radio buttons will be injected here by JavaScript -->
+                </div>
+                <div class="address-actions-checkout">
+                    <button class="btn-explore ghost" id="checkout-add-address-btn"><i class="fa-solid fa-plus"></i> Add New Address</button>
+                </div>
+
+                <hr class="dropdown-divider">
+
+                <h2>Order Items</h2>
+                <div class="order-items-list">
+                    <!-- Cart items will be injected here, maintaining edit functionality -->
+                </div>
+            </div>
+
+            <div class="order-summary-card">
+                <h2>Payment Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal (<span id="total-items-placeholder">0</span> items)</span>
+                    <span class="summary-value" id="summary-subtotal-placeholder">₹0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping Charges</span>
+                    <span class="summary-value" id="shipping-charges-placeholder">₹0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span class="summary-value" id="discount-placeholder">- ₹0.00</span>
+                </div>
+                <hr class="dropdown-divider">
+                <div class="summary-row total-row">
+                    <span>Total Payment</span>
+                    <span class="summary-value total-price" id="total-payment-placeholder">₹0.00</span>
+                </div>
+                
+                <!-- Enhanced Payment Methods Section -->
+                <div class="payment-methods">
+                    <span>We accept:</span>
+                    <div class="payment-icons">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-google-pay"></i>
+                    </div>
+                </div>
+                
+                <button class="btn-checkout">Proceed to Payment</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="./JS/main.js" defer></script>
+</body>
+</html>

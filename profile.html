@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - ZapStickers</title>
+    <link rel="stylesheet" href="./CSS/style_home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="auth-modal-placeholder"></div>
+    <div id="address-modal-placeholder"></div>
+
+    <main class="container">
+        <div class="profile-layout">
+            <div class="profile-nav-card">
+                <div class="profile-user-header">
+                    <div class="profile-pic-wrapper">
+                        </div>
+                    <h3>Alex Grim</h3>
+                    <p>alex.grim@example.com</p>
+                </div>
+                <nav class="profile-nav">
+                    <a href="#profile" class="profile-nav-link active"><i class="fa-solid fa-user-edit"></i><span>Edit Profile</span></a>
+                    <a href="#orders" class="profile-nav-link"><i class="fa-solid fa-box-archive"></i><span>My Orders</span></a>
+                    <a href="#addresses" class="profile-nav-link"><i class="fa-solid fa-map-location-dot"></i><span>My Addresses</span></a>
+                    <a href="#settings" class="profile-nav-link"><i class="fa-solid fa-sliders"></i><span>Settings</span></a>
+                </nav>
+            </div>
+
+            <div class="profile-content-card">
+                <!-- Edit Profile Tab -->
+                <div id="profile" class="profile-tab-content active">
+                    <h2>Public Profile</h2>
+                    <p class="content-description">This information will be displayed publicly so be careful what you share.</p>
+                    <form class="profile-form">
+                        <div class="form-group">
+                            <label for="profile-name">Full Name</label>
+                            <input type="text" id="profile-name" value="Alex Grim">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-phone">Phone Number</label>
+                            <input type="tel" id="profile-phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-email">Email Address</label>
+                            <input type="email" id="profile-email" value="alex.grim@example.com" disabled>
+                            <small>Your email address is not displayed publicly.</small>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn-explore">Save Changes</button>
+                            <button type="button" class="btn-explore ghost profile-logout-btn">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+                            </button>
+                        </div>
+                    </form>
+
+                    
+                </div>
+
+                <!-- My Orders Tab -->
+                <div id="orders" class="profile-tab-content">
+                    <h2>My Orders</h2>
+                    <p class="content-description">View your order history and check the status of your recent purchases.</p>
+                    <div class="orders-list">
+                        <!-- Sample Order 1: Delivered -->
+                        <div class="order-card">
+                            <div class="order-header">
+                                <div>
+                                    <h4>Order #ZAP-280725-001</h4>
+                                    <p>Placed on July 28, 2025</p>
+                                </div>
+                                <span class="order-status delivered">Delivered</span>
+                            </div>
+                            <div class="order-body">
+                                <div class="order-item-preview">
+                                    <img src="https://www.fomostore.in/cdn/shop/products/Brothers-Innovation-Laptop-Skins-Anime-Yondaime_Hokage-Image-1.png?v=1751449094" alt="Yondaime Hokage Laptop Skin">
+                                    <img src="https://www.wrapcart.com/cdn/shop/products/WC_1-min-min.jpg?v=1743592695" alt="Abstract Mobile Skin">
+                                </div>
+                                <div class="order-summary">
+                                    <p class="total-price">₹1198.00</p>
+                                    <p>2 items</p>
+                                </div>
+                            </div>
+                            <div class="order-footer">
+                                <button class="btn-explore ghost">View Invoice</button>
+                                <button class="btn-explore">Reorder</button>
+                            </div>
+                        </div>
+                         <!-- Sample Order 2: Shipped -->
+                        <div class="order-card">
+                            <div class="order-header">
+                                <div>
+                                    <h4>Order #ZAP-250725-003</h4>
+                                    <p>Placed on July 25, 2025</p>
+                                </div>
+                                <span class="order-status shipped">Shipped</span>
+                            </div>
+                             <div class="order-body">
+                                <div class="order-item-preview">
+                                    <img src="https://images.unsplash.com/photo-1607427024012-58359e1b569e?w=500&auto=format&fit=crop" alt="Cyber Skull Decal">
+                                    <img src="https://images.unsplash.com/photo-1614741118884-857417151158?w=100&auto=format&fit=crop" alt="Holographic Flakes">
+                                    <div class="more-items">+1</div>
+                                </div>
+                                <div class="order-summary">
+                                    <p class="total-price">₹1447.00</p>
+                                    <p>3 items</p>
+                                </div>
+                            </div>
+                            <div class="order-footer">
+                                <button class="btn-explore ghost">View Invoice</button>
+                                <a href="profile.html#orders" class="btn-explore" style="text-decoration: none; color: inherit;">Track Order</a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Empty Orders Message (hidden by default) -->
+                    <div class="empty-orders-message hidden">
+                        <i class="fa-solid fa-box-open"></i>
+                        <h2>No orders yet</h2>
+                        <p>You haven't placed any orders yet. Let's change that!</p>
+                        <a href="Browse_Page.html"><button class="btn-explore">Start Shopping</button></a>
+                    </div>
+                </div>
+
+                <!-- My Addresses Tab -->
+                <div id="addresses" class="profile-tab-content">
+                    <h2>My Addresses</h2>
+                    <p class="content-description">Manage your saved shipping addresses for faster checkout.</p>
+                    <div class="address-list">
+                    </div>
+                    <button class="btn-explore ghost" id="add-new-address-btn"><i class="fa-solid fa-plus"></i> Add New Address</button>
+                </div>
+
+                <!-- Settings Tab -->
+                <div id="settings" class="profile-tab-content">
+                    <h2>Account Settings</h2>
+                    <p class="content-description">Manage your site preferences.</p>
+                    <div class="settings-row">
+                        <div class="settings-label">
+                            <strong>Dark Mode</strong>
+                            <p>Toggle between light and dark theme.</p>
+                        </div>
+                        <div class="settings-action">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings-row">
+                        <div class="settings-label">
+                            <strong>Email Notifications</strong>
+                            <p>Receive updates about new products and offers.</p>
+                        </div>
+                        <div class="settings-action">
+                             <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer-container">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo-section">
+                        <img class="theme-logo footer-logo" src='/Images/ZapLogo-removebg-preview.png' data-dark-src="/Images/ZapLogo-removebg-preview.png" data-light-src="/Images/ZapLogo2-removebg-preview.png" alt="ZapStickers Logo">
+                        <p>Designs that stick. Premium quality stickers, skins, and decals to express your style.</p>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="skins.html">Skins</a></li>
+                        <li><a href="Stickers.html">Stickers</a></li>
+                        <li><a href="decals.html">Decals</a></li>
+                        <li><a href="Custom.html">Custom Orders</a></li>
+                        <li><a href="Browse_Page.html">Browse All</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="profile.html#orders">Track Order</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Join Our Newsletter</h3>
+                    <p>Get exclusive deals, new product announcements, and more.</p>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2025 ZapStickers. All Rights Reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    
+    <script>
+        // Immediately update profile info to prevent content flash
+        const cachedPicUrl = localStorage.getItem('zapUserProfilePic');
+        const cachedUserFullName = localStorage.getItem('zapUserFullName');
+        const cachedUsername = localStorage.getItem('zapUsername'); // Fallback
+        const cachedUserEmail = localStorage.getItem('zapUserEmail');
+        
+        const picWrapper = document.querySelector('.profile-pic-wrapper');
+
+        if (picWrapper) {
+            if (cachedPicUrl) {
+                picWrapper.innerHTML = `<img src="${cachedPicUrl}" alt="User Profile Picture" class="profile-page-pic">`;
+            } else if (cachedUserFullName) {
+                const initial = cachedUserFullName.charAt(0).toUpperCase();
+                picWrapper.innerHTML = `<div class="profile-page-initial">${initial}</div>`;
+            }
+        }
+
+        const nameToDisplay = cachedUserFullName || cachedUsername;
+
+        if (nameToDisplay) {
+            // Update the header name
+            const headerNameElement = document.querySelector('.profile-user-header h3');
+            if (headerNameElement) {
+                headerNameElement.textContent = nameToDisplay;
+            }
+            // Update the form input value
+            const formNameInput = document.getElementById('profile-name');
+            if (formNameInput) {
+                formNameInput.value = nameToDisplay;
+            }
+        }
+        
+        if (cachedUserEmail) {
+            // Update the header email
+            const headerEmailElement = document.querySelector('.profile-user-header p');
+            if (headerEmailElement) {
+                headerEmailElement.textContent = cachedUserEmail;
+            }
+            // Update the form input value
+            const formEmailInput = document.getElementById('profile-email');
+            if (formEmailInput) {
+                formEmailInput.value = cachedUserEmail;
+            }
+        }
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+    <script src="./JS/main.js" defer></script>
+</body>
+
+</html>

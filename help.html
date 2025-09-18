@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & FAQ - ZapStickers</title>
+    <link rel="stylesheet" href="./CSS/style_home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="auth-modal-placeholder"></div>
+
+    <main class="container">
+        <div class="help-hero">
+            <h1>Help Center</h1>
+            <p>Find answers, guides, and support for all your ZapStickers needs.</p>
+            <form class="help-search-section" id="help-search-form">
+                <div class="search-container help-search-bar">
+                    <input type="text" class="search-input" id="help-search-input" placeholder="e.g., how to apply a skin">
+                </div>
+            </form>
+        </div>
+
+        <div class="help-category-grid">
+            <a href="#faq-ordering" class="help-category-card" data-target="faq-ordering">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Ordering & Tracking</h3>
+                <p>Track, cancel, or check your order status.</p>
+            </a>
+            <a href="#faq-products" class="help-category-card" data-target="faq-products">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Products & Application</h3>
+                <p>How-to guides and product details.</p>
+            </a>
+            <a href="#faq-returns" class="help-category-card" data-target="faq-returns">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <h3>Payments & Returns</h3>
+                <p>Refunds, returns, and payment info.</p>
+            </a>
+        </div>
+
+        <div class="faq-container">
+            <div id="faq-ordering" class="faq-category">
+                <h2><i class="fa-solid fa-truck-fast"></i> Ordering & Tracking</h2>
+                <div class="faq-item">
+                    <button class="faq-question">How do I track my order?</button>
+                    <div class="faq-answer">
+                        <p>Once your order is shipped, you will receive an email with a tracking link and number. You can also find your tracking information in the "My Orders" section of your profile.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I modify or cancel my order?</button>
+                    <div class="faq-answer">
+                        <p>Unfortunately, orders cannot be modified once placed. You can request a cancellation from your profile's "My Orders" section within 2 hours of placing the order. After that, cancellation is not possible as the order goes into production.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="faq-products" class="faq-category">
+                <h2><i class="fa-solid fa-palette"></i> Products & Application</h2>
+                <div class="faq-item">
+                    <button class="faq-question">How do I apply a skin without bubbles?</button>
+                    <div class="faq-answer">
+                        <p>1. Clean your device surface thoroughly. 2. Carefully align the skin and peel a small part of the backing. 3. Apply the exposed section and use a card (like a credit card) to smoothly press it down as you peel off the rest of the backing. 4. For curved edges, you can gently use a hairdryer on low heat to make the vinyl more flexible.</p>
+                    </div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question">Are your stickers waterproof?</button>
+                    <div class="faq-answer">
+                        <p>Yes! All our vinyl stickers and decals are 100% waterproof, scratch-resistant, and feature a UV-protective layer to prevent fading in the sun.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="faq-returns" class="faq-category">
+                <h2><i class="fa-solid fa-indian-rupee-sign"></i> Payments & Returns</h2>
+                <div class="faq-item">
+                    <button class="faq-question">What is your return policy?</button>
+                    <div class="faq-answer">
+                        <p>We accept returns for manufacturing defects within 7 days of delivery. As most items are made to order, we do not accept returns for incorrect size selection or change of mind. Please visit our "Return & Cancellation Policy" page for more details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h3>ZapBot</h3>
+                <span>Ask me a question!</span>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="chat-message bot">Hello! How can I help you with your order, our products, or our policies?</div>
+            </div>
+            <div class="chatbot-input-form">
+                <input type="text" id="chatbot-input" placeholder="Type your message...">
+                <button id="chatbot-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+
+        <div class="contact-help-section">
+            <h2>Still need help?</h2>
+            <p>If you can't find the answer you're looking for, we're here to help.</p>
+            <div class="hero-buttons">
+                <a href="mailto:support@zapstickers.com"><button class="btn-explore">
+                    <i class="fa-solid fa-envelope"></i> Email Us
+                </button></a>
+            </div>
+            <p class="support-hours">Support available Mon - Fri, 10:00 AM - 6:00 PM IST.</p>
+        </div>
+
+    </main>
+
+    <footer class="main-footer-container">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo-section">
+                        <img class="theme-logo footer-logo" src='/Images/ZapLogo-removebg-preview.png' data-dark-src="/Images/ZapLogo-removebg-preview.png" data-light-src="/Images/ZapLogo2-removebg-preview.png" alt="ZapStickers Logo">
+                        <p>Designs that stick. Premium quality stickers, skins, and decals to express your style.</p>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="skins.html">Skins</a></li>
+                        <li><a href="Stickers.html">Stickers</a></li>
+                        <li><a href="decals.html">Decals</a></li>
+                        <li><a href="Custom.html">Custom Orders</a></li>
+                        <li><a href="Browse_Page.html">Browse All</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="profile.html#orders">Track Order</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Join Our Newsletter</h3>
+                    <p>Get exclusive deals, new product announcements, and more.</p>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2025 ZapStickers. All Rights Reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="./JS/main.js" defer></script>
+</body>
+</html>
